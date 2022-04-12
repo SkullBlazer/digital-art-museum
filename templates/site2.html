@@ -1,0 +1,31 @@
+<head>
+    <title>Digital Art Museum</title>
+    <link rel="icon" href="{{url_for('static', filename='src/logo.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+    <meta name="viewport" content="width=content-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div class="navbar" id="top">
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="/"><input type="image" src="{{url_for('static', filename='src/logo.png')}}" height="135" width="135"/></a></li>
+                <li><a href="art">View Digital Art</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <li style="color:#f4f5f6">Logged in</li>
+            </ul>
+        </nav>
+    </div>
+    <span style="text-align:center;" class="title1">Digital Art Museum</span>
+    <span style="text-align:center;" class="title2">View the creativity of artists all around the world</span>
+    <div class="container">
+        <img src="{{url_for('static', filename='src/realcars.webp')}}" style="width:100%;">
+        <div class="center" style="text-align:center;">Choose an art piece that suits you<br> from our wide variety of art</div>
+        <form method="get" action="/art">
+            <button class="littlebelow" style="text-align:center;" href="art">View Digital Art now</button>
+        </form>
+    </div>
+    <a href="#top">
+        <button class="topp">^</button>
+    </a>
+</body>

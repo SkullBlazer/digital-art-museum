@@ -1,0 +1,57 @@
+<head>
+    <title>B2S - Product</title>
+    <link rel="icon" href="{{url_for('static', filename='src/b2s.jpg')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+    <meta name="viewport" content="width=content-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div class = "navbar">
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <li><a href="seller">Want to sell?</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="products single-product">
+        <div class="row2">
+            <div class="col-3">
+                <img src="{{url_for('static', filename='src/mens_shirt.jpg')}}">
+            </div>
+            <div class="col-3">
+                <h5 style="font-family:Verdana;">Rating: 4.3/5.0</h5>
+                <h1 style="color: #f4f5f6; font-family: Arial; margin-top: 5px;">White Cotton Full-Sleeved Shirt</h1>
+                <h4 style="color: #dee3de; font-family:Verdana;">₹399.99</h4>
+                <select style="margin-top: 20px;">
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <style>
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+  
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+                </style>
+                <input type="number" value="1" placeholder="Enter Quantity" class="qty">
+                <a href="/sdetails/1" class="btn" style="margin-top: 20px;">Buy</a>
+                <br>
+                <h2 style="color: #e1e1dd; margin-top: 30px; font-family:Arial;">Product Details</h2>
+                <p style="color: #f4f5f6; font-family:Verdana;">Collar neck, made out of
+                    100% pure cotton</p>
+                <br>
+                <h3 style="font-family:Verdana;">Quantity left: 200</h3>
+            </div>
+        </div>
+    </div>
+</body>

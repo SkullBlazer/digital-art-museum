@@ -1,0 +1,41 @@
+<head>
+    <title>Digital Art Museum</title>
+    <link rel="icon" href="{{url_for('static', filename='src/logo.png')}}" type="image/x-icon">
+    <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="hero">
+    <div class = "navbar">
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="/"><input type="image" src="{{url_for('static', filename='src/logo.png')}}" height="135" width="135"/></a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1 style="text-align:center;" class = "header">
+        Digital Art Museum Artist Login
+    </h1>
+    <div class="form-box">
+        <style>
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+        </style>
+        <form class="input-grp" method="post" action="/admin" id="register" autocomplete="off">
+            <input style="text-align:center;" class="input" type="number"  placeholder="Enter Admin ID"  name="username" required/>
+            <br>
+            <input style="text-align:center;" class="input" type="password" placeholder="Enter Password" name="password" required/>
+            <br>
+            <input type="checkbox" class="check"><span> Remember Password</span>
+            <button class="summit" type="submit"> Log In </button>
+        </form>
+    </div>
+</div>
