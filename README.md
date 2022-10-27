@@ -1,4 +1,4 @@
-# digital art museum
+# Digital art museum
 
 This is a Digital Art Museum that allows users to view Digital Art by paying a fee set by the artist. All of the money paid by the viewer will be given to the artist.
 
